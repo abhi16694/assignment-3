@@ -1,0 +1,15 @@
+ extends layout
+
+block content
+  h1= title
+  p Hi #{user.userName}
+  p You have #{user.totalProducts} items in your cart.
+  p Your email is #{user.email}
+  p Your mobile number is #{user.mobileNumber}
+  p items are #{user.cart}
+  p
+      a(href='http://localhost:3000/cart/all') products
+
+  p 
+      a(href='http://localhost:3000/users/logout') Logout          
+        
